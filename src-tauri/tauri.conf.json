@@ -37,7 +37,27 @@
         "icons/128x128@2x.png",
         "icons/icon.icns",
         "icons/icon.ico"
-      ]
+      ],
+      "category": "Utility",
+      "shortDescription": "Gardyn device tester utility",
+      "longDescription": "",
+      "macOS": {
+        "minimumSystemVersion": "10.13"
+      },
+      "windows": {
+        "allowDowngrades": true,
+        "certificateThumbprint": null,
+        "digestAlgorithm": null,
+        "nsis": null,
+        "timestampUrl": null,
+        "tsp": false,
+        "webviewFixedRuntimePath": null,
+        "webviewInstallMode": {
+          "silent": true,
+          "type": "downloadBootstrapper"
+        },
+        "wix": null
+      }
     }
   }
 }
