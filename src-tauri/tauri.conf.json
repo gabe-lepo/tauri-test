@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "Gabe's Test App",
-    "version": "master-0.0.1"
+    "version": "master-001"
   },
   "tauri": {
     "allowlist": {
