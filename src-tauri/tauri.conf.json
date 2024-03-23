@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "tauri-test",
-    "version": "0.0.0"
+    "productName": "Gabe's Test App",
+    "version": "master-0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -19,7 +19,7 @@
     },
     "windows": [
       {
-        "title": "tauri-test",
+        "title": "Gabe's Test App",
         "width": 800,
         "height": 600
       }
@@ -30,7 +30,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "version.dev.001",
+      "identifier": "tauri-test-bundle",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
