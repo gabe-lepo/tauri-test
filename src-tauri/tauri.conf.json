@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "Gabe's Test App",
-    "version": "master-001"
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -30,7 +30,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "tauri-test-bundle",
+      "identifier": "dev.Gabe.test",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
