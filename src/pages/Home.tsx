@@ -1,8 +1,10 @@
 import "bulma";
 
+import BasicControls from "../components/BasicControls";
+
 function Home() {
    return(
-      <body className="has-background-dark">
+      <section className="section">
          <div className="block container">
             <div className="box">
                <p className="title is-spaced">Home</p>
@@ -16,7 +18,7 @@ function Home() {
                </nav>
             </div>
          </div>
-         <div className="container">
+         <div className="block container">
             <div className="box">
                <input
                   className="input is-info"
@@ -26,7 +28,8 @@ function Home() {
                <button className="button is-success">Connect</button>
             </div>
          </div>
-      </body>
+         <BasicControls />
+      </section>
    );
 }
 
