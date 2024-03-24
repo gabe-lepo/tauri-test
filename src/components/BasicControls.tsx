@@ -18,15 +18,47 @@ function BasicControls() {
    return(
       <div className="block container">
          <div className="box">
-            <button className="button is-success" onClick={onLightsDim}>
-               DIM
-            </button>
-            <button className="button is-success" onClick={onLightsBoost}>
-               BOOST
-            </button>
-            <button className="button is-success" onClick={onLightsOff}>
-               OFF
-            </button>
+            <span className="title">LEDs</span>
+            <table className="table">
+               <thead><tr>
+                  <td>
+                     <span className="subtitle">Controls</span>
+                  </td>
+                  <td>
+                     <span className="subtitle">Results</span>
+                  </td>
+               </tr></thead>
+               <tr>
+                  <td>
+                     <button className="button is-success" onClick={onLightsDim}>DIM</button>
+                  </td>
+                  <td>
+                     <p className="subtitle">
+                        {typeof usePostLightsOn().data?.code}: {usePostLightsOn().data?.code}
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button className="button is-success" onClick={onLightsBoost}>BOOST</button>
+                  </td>
+                  <td>
+                     <p className="subtitle">
+                        {typeof usePostLightsBoost().data?.code}: {usePostLightsBoost().data?.code}
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button className="button is-success" onClick={onLightsOff}>OFF</button>
+                  </td>
+                  <td>
+                     <p className="subtitle">
+                        {typeof usePostLightsOff().data?.code}: {usePostLightsOff().data?.code}
+                     </p>
+                  </td>
+               </tr>
+            </table>
          </div>
       </div>
    );
