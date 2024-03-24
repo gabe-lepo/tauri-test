@@ -21,7 +21,7 @@ function Home() {
                <input
                   className="input is-info"
                   type="text"
-                  placeholder="IP Address"
+                  placeholder="Enter IP Address"
                />
                <button className="button is-success">Connect</button>
             </div>
