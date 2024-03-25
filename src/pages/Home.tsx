@@ -3,6 +3,7 @@ import "bulma";
 import LightControls from "../components/LightControls";
 import PingConnection from "../components/PingConnection";
 import WifiList from "../components/WifiList";
+import MonitorInfo from "../components/MonitorInfo";
 
 function Home() {
    return(
@@ -18,11 +19,8 @@ function Home() {
                </ul>
             </nav>
          </div>
-         <div className="block container box">
-            <p className="title">Title</p>
-            <p>{}</p>
-         </div>
 
+         <MonitorInfo />
          <WifiList />
          <PingConnection />
          <LightControls />
