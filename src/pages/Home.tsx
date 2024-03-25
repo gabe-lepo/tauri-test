@@ -1,6 +1,7 @@
 import "bulma";
 
-import BasicControls from "../components/BasicControls";
+import LightControls from "../components/LightControls";
+import PingConnection from "../components/PingConnection";
 
 function Home() {
    return(
@@ -28,7 +29,8 @@ function Home() {
                <button className="button is-success">Connect</button>
             </div>
          </div>
-         <BasicControls />
+         <PingConnection />
+         <LightControls />
       </section>
    );
 }

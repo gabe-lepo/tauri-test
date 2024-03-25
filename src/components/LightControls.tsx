@@ -7,7 +7,7 @@ import {
    usePostLightsOff,
 } from "../api/usePostLightsControls";
 
-function BasicControls() {
+function LightControls() {
    const { createItem: setLightsDim } = usePostLightsOn();
    const { createItem: setLightsBoost } = usePostLightsBoost();
    const { createItem: setLightsOff } = usePostLightsOff();
@@ -64,4 +64,4 @@ function BasicControls() {
    );
 }
 
-export default BasicControls;
+export default LightControls;
