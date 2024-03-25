@@ -20,7 +20,14 @@ function Home() {
             </nav>
          </div>
 
-         <MonitorInfo />
+         <div className="grid">
+            <div className="cell">
+               <MonitorInfo />
+            </div>
+            <div className="cell">
+               <MonitorInfo />
+            </div>
+         </div>
          <WifiList />
          <PingConnection />
          <LightControls />
