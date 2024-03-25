@@ -11,11 +11,13 @@ function PingConnection() {
       <div className="block container">
          <div className="box">
             <p className="title">Test Connection</p>
-            <input
-               className="input is-info"
-               type="text"
-               placeholder="Enter IP Address"
-            />
+            <div className="block">
+               <input
+                  className="input is-info"
+                  type="text"
+                  placeholder="Enter IP Address"
+               />
+            </div>
             <table className="table">
                <thead><tr>
                   <td>
