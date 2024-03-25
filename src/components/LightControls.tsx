@@ -28,7 +28,7 @@ function LightControls() {
                      <p className="subtitle">Results</p>
                   </td>
                </tr></thead>
-               <tr>
+               <tbody><tr>
                   <td>
                      <button className="button is-success" onClick={onLightsDim}>DIM</button>
                   </td>
@@ -57,7 +57,7 @@ function LightControls() {
                         {typeof usePostLightsOff().data?.code}: {usePostLightsOff().data?.code}
                      </p>
                   </td>
-               </tr>
+               </tr></tbody>
             </table>
          </div>
       </div>

@@ -27,7 +27,7 @@ function PingConnection() {
                      <p className="subtitle">Results</p>
                   </td>
                </tr></thead>
-               <tr>
+               <tbody><tr>
                   <td>
                      <button className="button is-success" onClick={onPing}>Ping</button>
                   </td>
@@ -36,7 +36,7 @@ function PingConnection() {
                         {typeof usePostPing().data?.code}: {usePostPing().data?.code}
                      </p>
                   </td>
-               </tr>
+               </tr></tbody>
             </table>
          </div>
       </div>
