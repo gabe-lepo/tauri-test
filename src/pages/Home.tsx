@@ -2,6 +2,7 @@ import "bulma";
 
 import LightControls from "../components/LightControls";
 import PingConnection from "../components/PingConnection";
+import WifiList from "../components/WifiList";
 
 function Home() {
    return(
@@ -19,6 +20,8 @@ function Home() {
                </nav>
             </div>
          </div>
+
+         <WifiList />
          <PingConnection />
          <LightControls />
       </section>
