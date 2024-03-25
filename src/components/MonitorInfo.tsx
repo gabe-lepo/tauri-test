@@ -16,7 +16,7 @@ function MonitorInfo() {
 
    return(
       <div className="block container box">
-         <p className="title">Current Monitor</p>
+         <p className="title">Monitor Info</p>
          <table className="table">
             <thead><tr>
                <td>

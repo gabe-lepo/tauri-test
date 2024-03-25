@@ -4,6 +4,7 @@ import LightControls from "../components/LightControls";
 import PingConnection from "../components/PingConnection";
 import WifiList from "../components/WifiList";
 import MonitorInfo from "../components/MonitorInfo";
+import WindowInfo from "../components/WindowInfo";
 
 function Home() {
    return(
@@ -25,7 +26,7 @@ function Home() {
                <MonitorInfo />
             </div>
             <div className="cell">
-               <MonitorInfo />
+               <WindowInfo />
             </div>
          </div>
          <WifiList />
