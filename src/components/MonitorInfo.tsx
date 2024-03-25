@@ -1,6 +1,7 @@
-import { currentMonitor, Monitor } from "@tauri-apps/api/window";
 import "bulma";
+
 import { useEffect, useState } from "react";
+import { currentMonitor, Monitor } from "@tauri-apps/api/window";
 
 function MonitorInfo() {
    const [monitorInfo, setMonitorInfo] = useState<Monitor | null>(null);
