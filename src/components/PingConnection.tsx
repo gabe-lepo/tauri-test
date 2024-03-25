@@ -10,14 +10,19 @@ function PingConnection() {
    return(
       <div className="block container">
          <div className="box">
-            <span className="title">Test Connection</span>
+            <p className="title">Test Connection</p>
+            <input
+               className="input is-info"
+               type="text"
+               placeholder="Enter IP Address"
+            />
             <table className="table">
                <thead><tr>
                   <td>
-                     <span className="subtitle">Controls</span>
+                     <p className="subtitle">Controls</p>
                   </td>
                   <td>
-                     <span className="subtitle">Results</span>
+                     <p className="subtitle">Results</p>
                   </td>
                </tr></thead>
                <tr>

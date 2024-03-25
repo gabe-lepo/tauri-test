@@ -19,16 +19,6 @@ function Home() {
                </nav>
             </div>
          </div>
-         <div className="block container">
-            <div className="box">
-               <input
-                  className="input is-info"
-                  type="text"
-                  placeholder="Enter IP Address"
-               />
-               <button className="button is-success">Connect</button>
-            </div>
-         </div>
          <PingConnection />
          <LightControls />
       </section>
