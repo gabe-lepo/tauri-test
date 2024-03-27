@@ -1,6 +1,5 @@
 import "bulma";
 
-import LightControls from "../components/LightControls";
 import EndpointAccess from "../components/EndpointAccess";
 import WifiList from "../components/WifiList";
 import MonitorInfo from "../components/MonitorInfo";
@@ -28,9 +27,6 @@ function Home() {
             </div>
             <div className="cell">
                <EndpointAccess />
-            </div>
-            <div className="cell">
-               <LightControls />
             </div>
          </div>
       </section>
