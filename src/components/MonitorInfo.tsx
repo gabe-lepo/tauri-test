@@ -32,28 +32,16 @@ function MonitorInfo() {
                   <td>{monitorInfo?.name}</td>
                </tr>
                <tr>
-                  <td>Position Type</td>
-                  <td>{monitorInfo?.position.type}</td>
-               </tr>
-               <tr>
-                  <td>Position X</td>
-                  <td>{monitorInfo?.position.x}</td>
-               </tr>
-               <tr>
-                  <td>Position Y</td>
-                  <td>{monitorInfo?.position.y}</td>
-               </tr>
-               <tr>
-                  <td>Scale Factor</td>
-                  <td>{monitorInfo?.scaleFactor.toString()}</td>
-               </tr>
-               <tr>
                   <td>{monitorInfo?.size.type} Width</td>
-                  <td>{monitorInfo?.size.width}</td>
+                  <td>{monitorInfo?.size.width} px</td>
                </tr>
                <tr>
                   <td>{monitorInfo?.size.type} Height</td>
-                  <td>{monitorInfo?.size.height}</td>
+                  <td>{monitorInfo?.size.height} px</td>
+               </tr>
+               <tr>
+                  <td>Scale Factor</td>
+                  <td>{monitorInfo?.scaleFactor.toString()}x</td>
                </tr>
             </tbody>
          </table>
