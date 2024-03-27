@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { currentMonitor, Monitor } from "@tauri-apps/api/window";
 
 function MonitorInfo() {
-   const [monitorInfo, setMonitorInfo] = useState<Monitor | null>(null);
+   const [monitorInfo, setMonitorInfo] = useState<Monitor | null>();
 
    useEffect(() => {
       currentMonitor().then((info) => {
@@ -12,7 +12,7 @@ function MonitorInfo() {
       }).catch((err) => {
          console.error("@@@ MonitorInfo: Error -", (err));
       });
-   }, []);
+   }, [monitorInfo]);
 
    return(
       <div className="block container box">
