@@ -1,7 +1,7 @@
 import "bulma";
 
 import LightControls from "../components/LightControls";
-import PingConnection from "../components/PingConnection";
+import EndpointAccess from "../components/EndpointAccess";
 import WifiList from "../components/WifiList";
 import MonitorInfo from "../components/MonitorInfo";
 import AppControls from "../components/AppControls";
@@ -27,7 +27,7 @@ function Home() {
                <WifiList />
             </div>
             <div className="cell">
-               <PingConnection />
+               <EndpointAccess />
             </div>
             <div className="cell">
                <LightControls />
