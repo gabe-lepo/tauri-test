@@ -19,9 +19,16 @@ function AppControls() {
          <p className="title">App Controls</p>
          <div className="field has-addons">
             <p className="control">
-            <button className="button is-warning is-outlined" onClick={reloadApp}>Reload</button>
-            </p><p className="control">
-            <button className="button is-danger is-outlined" onClick={closeApp}>Exit</button>
+               <button
+                  className="button is-warning is-outlined"
+                  onClick={reloadApp}
+               >Reload</button>
+            </p>
+            <p className="control">
+               <button
+                  className="button is-danger is-outlined"
+                  onClick={closeApp}
+               >Exit</button>
             </p>
          </div>
       </div>
