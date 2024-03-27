@@ -12,6 +12,11 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["http://192.168.4.1:8010/*"]
+      },
       "shell": {
         "all": false,
         "open": false,
