@@ -5,33 +5,34 @@ import PingConnection from "../components/PingConnection";
 import WifiList from "../components/WifiList";
 import MonitorInfo from "../components/MonitorInfo";
 import AppControls from "../components/AppControls";
+import NavMenu from "../components/NavMenu";
 
 function Home() {
    return(
       <section className="section">
-         <div className="block container box">
-            <p className="title is-spaced">Home</p>
-            <span className="subtitle is-4">Menu</span>
-            <nav className="breadcrumb" aria-label="breadcrumbs">
-               <ul className="subtitle is-6">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-               </ul>
-            </nav>
+         <div className="block container box has-text-centered">
+            <p className="title">Home</p>
          </div>
-
-         <div className="grid">
+         <div className="grid is-col-min-12">
             <div className="cell">
-               <MonitorInfo />
+               <NavMenu />
             </div>
             <div className="cell">
                <AppControls />
             </div>
+            <div className="cell">
+               <MonitorInfo />
+            </div>
+            <div className="cell">
+               <WifiList />
+            </div>
+            <div className="cell">
+               <PingConnection />
+            </div>
+            <div className="cell">
+               <LightControls />
+            </div>
          </div>
-         <WifiList />
-         <PingConnection />
-         <LightControls />
       </section>
    );
 }
