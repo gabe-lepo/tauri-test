@@ -1,35 +1,26 @@
-import "bulma";
+import "../main.css";
 
-import EndpointAccess from "../components/EndpointAccess";
-import WifiList from "../components/WifiList";
-import MonitorInfo from "../components/MonitorInfo";
-import AppControls from "../components/AppControls";
+/*
 import NavMenu from "../components/NavMenu";
+import AppControls from "../components/AppControls";
+import MonitorInfo from "../components/MonitorInfo";
+import WifiList from "../components/WifiList";
+import EndpointAccess from "../components/EndpointAccess";
+*/
 
 function Home() {
    return(
-      <section className="section">
-         <div className="block container box has-text-centered">
-            <p className="title">Home</p>
-         </div>
-         <div className="grid is-col-min-12">
-            <div className="cell">
-               <NavMenu />
-            </div>
-            <div className="cell">
-               <AppControls />
-            </div>
-            <div className="cell">
-               <MonitorInfo />
-            </div>
-            <div className="cell">
-               <WifiList />
-            </div>
-            <div className="cell">
-               <EndpointAccess />
-            </div>
-         </div>
-      </section>
+      <div className={
+         "md:container border " +
+         "px-4 py-2 mt-2 "
+      }>
+         <p className="border">Home</p>
+         {/*<NavMenu />
+         <AppControls />
+         <MonitorInfo />
+         <WifiList />
+         <EndpointAccess />*/}
+      </div>
    );
 }
 

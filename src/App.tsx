@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import Home from './pages/Home';
-import Tailwindtest from './pages/Tailwindtest';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="" Component={Tailwindtest} />
+        <Route path="" Component={Home} />
       </Routes>
     </Router>
   );
