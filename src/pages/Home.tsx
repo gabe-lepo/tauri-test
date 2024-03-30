@@ -1,6 +1,5 @@
 import "../main.css";
 
-//emoji commit
 import ComponentCard from "../components/ComponentCard";
 import NavMenu from "../components/NavMenu";
 import AppControls from "../components/AppControls";
