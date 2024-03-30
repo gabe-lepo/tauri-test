@@ -1,4 +1,4 @@
-import "bulma";
+import "../main.css";
 
 import { relaunch, exit } from "@tauri-apps/api/process";
 
@@ -15,23 +15,12 @@ function AppControls() {
    }
    
    return(
-      <div className="block container box">
+      <>
          <p className="title">App Controls</p>
-         <div className="field has-addons">
-            <p className="control">
-               <button
-                  className="button is-warning is-outlined"
-                  onClick={reloadApp}
-               >Reload</button>
-            </p>
-            <p className="control">
-               <button
-                  className="button is-danger is-outlined"
-                  onClick={closeApp}
-               >Exit</button>
-            </p>
-         </div>
-      </div>
+         <button className="" onClick={reloadApp}>Reload</button>
+         <br />
+         <button className="" onClick={closeApp}>Exit</button>
+      </>
    );
 }
 

@@ -1,4 +1,4 @@
-import "bulma";
+import "../main.css";
 import { useState, ChangeEvent, useEffect } from "react";
 import { fetch, ResponseType } from "@tauri-apps/api/http";
 
@@ -50,42 +50,21 @@ function EndpointAccess() {
    }
 
    return(
-      <div className="block container box">
+      <>
          <p className="title">Endpoint Access</p>
-         
-         <div className="field">
-            <div className="control">
-               <div className="select">
-                  <select onChange={updateUrl}>
-                     <option>Lights ON</option>
-                     <option>Lights BOOST</option>
-                     <option>Lights OFF</option>
-                  </select>
-               </div>
-            </div>
-         </div>
-
-         <div className="field">
-            <div className="control">
-               <p>{url}</p>
-            </div>
-         </div>
-
-         <div className="field">
-            <div className="control">
-               <button
-                  className={isLoading ? "button is-success is-loading" : "button is-success"}
-                  onClick={handleClick}
-               >Submit</button>
-            </div>
-         </div>
+         <select onChange={updateUrl}>
+            <option>Lights ON</option>
+            <option>Lights BOOST</option>
+            <option>Lights OFF</option>
+         </select>
+         <p>{url}</p>
+         <button className={""} onClick={handleClick}>Submit</button>
          <hr />
-         <p className="subtitle">Response</p>
+         <p>Response</p>
          <p>{JSON.stringify(fetchResponse)}</p>
-         <hr />
-         <p className="subtitle">Error</p>
+         <p>Error</p>
          <p>{fetchError}</p>
-      </div>
+      </>
    );
 }
 

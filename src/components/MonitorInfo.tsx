@@ -1,4 +1,4 @@
-import "bulma";
+import "../main.css";
 
 import { useEffect, useState } from "react";
 import { currentMonitor, Monitor } from "@tauri-apps/api/window";
@@ -15,15 +15,15 @@ function MonitorInfo() {
    }, [monitorInfo]);
 
    return(
-      <div className="block container box">
-         <p className="title">Monitor Info</p>
-         <table className="table">
+      <>
+         <p>Monitor Info</p>
+         <table className="">
             <thead><tr>
                <td>
-                  <p className="subtitle">Properties</p>
+                  <p>Properties</p>
                </td>
                <td>
-                  <p className="subtitle">Data</p>
+                  <p>Data</p>
                </td>
             </tr></thead>
             <tbody>
@@ -45,7 +45,7 @@ function MonitorInfo() {
                </tr>
             </tbody>
          </table>
-      </div>
+      </>
    );
 }
 
