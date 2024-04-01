@@ -6,6 +6,7 @@ import AppControls from "../components/AppControls";
 import MonitorInfo from "../components/MonitorInfo";
 import WifiList from "../components/WifiList";
 import EndpointAccess from "../components/EndpointAccess";
+import CardTitle from "../components/CardTitle";
 
 function Home() {
    return(
@@ -13,7 +14,7 @@ function Home() {
          <div className={
             "grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
          }>
-            <ComponentCard component={<p>Home</p>} />
+            <ComponentCard component={<CardTitle title="Home" />} />
             <ComponentCard component={<NavMenu />} />
             <ComponentCard component={<AppControls />} />
             <ComponentCard component={<MonitorInfo />} />

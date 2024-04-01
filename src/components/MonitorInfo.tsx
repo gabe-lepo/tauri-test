@@ -2,6 +2,7 @@ import "../main.css";
 
 import { useEffect, useState } from "react";
 import { currentMonitor, Monitor } from "@tauri-apps/api/window";
+import CardTitle from "./CardTitle";
 
 function MonitorInfo() {
    const [monitorInfo, setMonitorInfo] = useState<Monitor | null>();
@@ -16,7 +17,7 @@ function MonitorInfo() {
 
    return(
       <>
-         <p>Monitor Info</p>
+         <CardTitle title="Monitor Info" subtitle={monitorInfo?.name?.toString()} />
          <div className="table w-full">
             <div className="table-header-group">
                <div className="table-row">
@@ -25,10 +26,6 @@ function MonitorInfo() {
                </div>
             </div>
             <div className="table-row-group">
-               <div className="table-row">
-                  <div className="table-cell">Name</div>
-                  <div className="table-cell">{monitorInfo?.name}</div>
-               </div>
                <div className="table-row">
                   <div className="table-cell">{monitorInfo?.size.type} Width</div>
                   <div className="table-cell">{monitorInfo?.size.width} px</div>

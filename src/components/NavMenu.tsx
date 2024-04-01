@@ -1,9 +1,10 @@
 import "../main.css";
+import CardTitle from "./CardTitle";
 
 function NavMenu() {
    return(
       <>
-         <p>Navigation</p>
+         <CardTitle title="Navigation" />
          <nav>
             <ul>
                <li><a href="/">Home</a></li>

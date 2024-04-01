@@ -1,6 +1,7 @@
 import "../main.css";
 
 import { relaunch, exit } from "@tauri-apps/api/process";
+import CardTitle from "./CardTitle";
 
 function AppControls() {
    function reloadApp() {
@@ -16,7 +17,7 @@ function AppControls() {
    
    return(
       <>
-         <p className="title">App Controls</p>
+         <CardTitle title="App Controls" />
          <button className="" onClick={reloadApp}>Reload</button>
          <br />
          <button className="" onClick={closeApp}>Exit</button>

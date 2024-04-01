@@ -1,10 +1,11 @@
 import "../main.css";
+import CardTitle from "./CardTitle";
 
 function WifiList() {
 
    return(
       <>
-         <p className="title">Wifi List</p>
+         <CardTitle title="Wifi List" subtitle="WIP" />
          <i>TODO</i>
       </>
    );

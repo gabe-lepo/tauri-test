@@ -1,6 +1,7 @@
 import "../main.css";
 import { useState, ChangeEvent, useEffect } from "react";
 import { fetch, ResponseType } from "@tauri-apps/api/http";
+import CardTitle from "./CardTitle";
 
 function EndpointAccess() {
    const endpoint = {
@@ -51,7 +52,7 @@ function EndpointAccess() {
 
    return(
       <>
-         <p className="title">Endpoint Access</p>
+         <CardTitle title="Device Controls" subtitle="Endpoint Access" />
          <select onChange={updateUrl}>
             <option>Lights ON</option>
             <option>Lights BOOST</option>
