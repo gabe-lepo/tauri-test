@@ -1,8 +1,8 @@
-import "../main.css"
+import "../main.css";
 
 interface CardProps {
    component: React.ReactNode
-}
+};
 
 export default function ComponentCard({ component }: CardProps) {
    return (
@@ -12,4 +12,4 @@ export default function ComponentCard({ component }: CardProps) {
          <div className="border border-dashed">{component}</div>
       </div>
    );
-}
+};
