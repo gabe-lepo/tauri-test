@@ -2,8 +2,9 @@ import "../main.css";
 import { useState, ChangeEvent, useEffect } from "react";
 import { fetch, ResponseType } from "@tauri-apps/api/http";
 import CardTitle from "./CardTitle";
+import Button from "./Button";
 
-function EndpointAccess() {
+export default function EndpointAccess() {
    const endpoint = {
       LIGHTS_ON: "http://192.168.4.1:8010/test/lights/on",
       LIGHTS_BOOST: "http://192.168.4.1:8010/test/lights/boost",
@@ -52,14 +53,14 @@ function EndpointAccess() {
 
    return(
       <>
-         <CardTitle title="Device Controls" subtitle="Endpoint Access" />
+         <CardTitle title="Endpoint Access" subtitle="Device Controls" />
          <select onChange={updateUrl}>
             <option>Lights ON</option>
             <option>Lights BOOST</option>
             <option>Lights OFF</option>
          </select>
          <p>{url}</p>
-         <button className={""} onClick={handleClick}>Submit</button>
+         <Button type={"success"} text="Submit" onClick={handleClick} />
          <hr />
          <p>Response</p>
          <p>{JSON.stringify(fetchResponse)}</p>
@@ -67,6 +68,4 @@ function EndpointAccess() {
          <p>{fetchError}</p>
       </>
    );
-}
-
-export default EndpointAccess;
+};

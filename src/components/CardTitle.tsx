@@ -3,9 +3,9 @@ import "../main.css";
 interface Props {
    title: string;
    subtitle?: string;
-}
+};
 
-export default function CardTitle({title, subtitle}: Props) {
+export default function CardTitle({ title, subtitle }: Props) {
    return (
       <div className="text-center antialiased border border-dashed">
          <h1 className={
