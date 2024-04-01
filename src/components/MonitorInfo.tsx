@@ -17,34 +17,32 @@ function MonitorInfo() {
    return(
       <>
          <p>Monitor Info</p>
-         <table className="">
-            <thead><tr>
-               <td>
-                  <p>Properties</p>
-               </td>
-               <td>
-                  <p>Data</p>
-               </td>
-            </tr></thead>
-            <tbody>
-               <tr>
-                  <td>Name</td>
-                  <td>{monitorInfo?.name}</td>
-               </tr>
-               <tr>
-                  <td>{monitorInfo?.size.type} Width</td>
-                  <td>{monitorInfo?.size.width} px</td>
-               </tr>
-               <tr>
-                  <td>{monitorInfo?.size.type} Height</td>
-                  <td>{monitorInfo?.size.height} px</td>
-               </tr>
-               <tr>
-                  <td>Scale Factor</td>
-                  <td>{monitorInfo?.scaleFactor.toString()}x</td>
-               </tr>
-            </tbody>
-         </table>
+         <div className="table w-full">
+            <div className="table-header-group">
+               <div className="table-row">
+                  <div className="table-cell">Properties</div>
+                  <div className="table-cell">Data</div>
+               </div>
+            </div>
+            <div className="table-row-group">
+               <div className="table-row">
+                  <div className="table-cell">Name</div>
+                  <div className="table-cell">{monitorInfo?.name}</div>
+               </div>
+               <div className="table-row">
+                  <div className="table-cell">{monitorInfo?.size.type} Width</div>
+                  <div className="table-cell">{monitorInfo?.size.width} px</div>
+               </div>
+               <div className="table-row">
+                  <div className="table-cell">{monitorInfo?.size.type} Height</div>
+                  <div className="table-cell">{monitorInfo?.size.height} px</div>
+               </div>
+               <div className="table-row">
+                  <div className="table-cell">Scale Factor</div>
+                  <div className="table-cell">{monitorInfo?.scaleFactor.toString()}x</div>
+               </div>
+            </div>
+         </div>
       </>
    );
 }

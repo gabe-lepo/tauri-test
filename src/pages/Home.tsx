@@ -9,14 +9,18 @@ import EndpointAccess from "../components/EndpointAccess";
 
 function Home() {
    return(
-      <>
-         <ComponentCard component={<p>Home</p>} />
-         <ComponentCard component={<NavMenu />} />
-         <ComponentCard component={<AppControls />} />
-         <ComponentCard component={<MonitorInfo />} />
-         <ComponentCard component={<WifiList />} />
-         <ComponentCard component={<EndpointAccess />} />
-      </>
+      <div className="h-dvh bg-neutral-200">
+         <div className={
+            "grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+         }>
+            <ComponentCard component={<p>Home</p>} />
+            <ComponentCard component={<NavMenu />} />
+            <ComponentCard component={<AppControls />} />
+            <ComponentCard component={<MonitorInfo />} />
+            <ComponentCard component={<WifiList />} />
+            <ComponentCard component={<EndpointAccess />} />
+         </div>
+      </div>
    );
 }
 
