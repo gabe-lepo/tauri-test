@@ -69,8 +69,8 @@
     "windows": [
       {
         "title": "Gabe's Test App",
-        "width": 800,
-        "height": 1000
+        "width": 1200,
+        "height": 800
       }
     ],
     "security": {
