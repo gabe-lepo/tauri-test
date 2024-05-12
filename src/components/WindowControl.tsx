@@ -74,6 +74,18 @@ export default function WindowControl() {
       }
    };
 
+   const minimizeWindow = () => {
+      setIsLoading(true);
+
+      appWindow.minimize().then(() => {
+         console.log("@@@ WindowControl: Minimized window");
+      }).catch((err) => {
+         console.error("@@@ WindowControl: Error -", (err));
+      }).finally(() => {
+         setIsLoading(false);
+      });
+   };
+
    return(
       <>
          <CardTitle title="Window" subtitle={"Info & Controls"} />
@@ -109,6 +121,14 @@ export default function WindowControl() {
                         type={"warning"}
                         text={isMax ? "Unmax" : "Max"}
                         onClick={toggleMaximize}
+                        disabled={isLoading}
+                     />
+                  </div>
+                  <div className="table-cell">
+                     <Button
+                        type={"warning"}
+                        text={"Minimize"}
+                        onClick={minimizeWindow}
                         disabled={isLoading}
                      />
                   </div>
