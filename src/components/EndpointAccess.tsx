@@ -60,7 +60,7 @@ export default function EndpointAccess() {
             <option>Lights OFF</option>
          </select>
          <p>{url}</p>
-         <Button type={"success"} text="Submit" onClick={handleClick} />
+         <Button type={"success"} text="Submit" onClick={handleClick} disabled={isLoading}/>
          <hr />
          <p>Response</p>
          <p>{JSON.stringify(fetchResponse)}</p>
