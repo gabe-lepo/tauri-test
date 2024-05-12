@@ -64,7 +64,7 @@ export default function WindowControl() {
          });
       } else {
          appWindow.unmaximize().then(() => {
-            setIsMax(true);
+            setIsMax(false);
             console.log("@@@ WindowControl: Unmaximized window");
          }).catch((err) => {
             console.error("@@@ WindowControl: Error -", (err));
