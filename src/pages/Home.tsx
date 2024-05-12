@@ -7,6 +7,7 @@ import MonitorInfo from "../components/MonitorInfo";
 import WifiList from "../components/WifiList";
 import EndpointAccess from "../components/EndpointAccess";
 import CardTitle from "../components/CardTitle";
+import WindowControl from "../components/WindowControl";
 
 function Home() {
    return(
@@ -18,6 +19,7 @@ function Home() {
             <ComponentCard component={<NavMenu />} />
             <ComponentCard component={<AppControls />} />
             <ComponentCard component={<MonitorInfo />} />
+            <ComponentCard component={<WindowControl />} />
             <ComponentCard component={<WifiList />} />
             <ComponentCard component={<EndpointAccess />} />
          </div>
