@@ -64,24 +64,6 @@
         "startDragging": true,
         "unmaximize": true,
         "unminimize": true
-      },
-      "fs": {
-        "all": false,
-        "copyFile": false,
-        "createDir": false,
-        "exists": false,
-        "readDir": true,
-        "readFile": false,
-        "removeDir": false,
-        "removeFile": false,
-        "renameFile": false,
-        "scope": [
-          "**"
-        ],
-        "writeFile": false
-      },
-      "path": {
-        "all": true
       }
     },
     "windows": [
