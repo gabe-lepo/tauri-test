@@ -20,8 +20,8 @@ function Home() {
             <ComponentCard component={<CardTitle title="Home" />} />
             <ComponentCard component={<NavMenu />} />
             <ComponentCard component={<AppControls />} />
-            <ComponentCard component={<MonitorInfo />} />
             <ComponentCard component={<WindowControl />} />
+            <ComponentCard component={<MonitorInfo />} />
             <ComponentCard component={<WifiList />} />
             <ComponentCard component={<EndpointAccess />} />
             <ComponentCard component={<Clipboard />} />

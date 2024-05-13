@@ -2,6 +2,7 @@ import "../main.css";
 
 import { relaunch, exit } from "@tauri-apps/api/process";
 import CardTitle from "./CardTitle";
+import Button from "./Button";
 
 function AppControls() {
    function reloadApp() {
@@ -18,9 +19,10 @@ function AppControls() {
    return(
       <>
          <CardTitle title="App Controls" />
-         <button className="" onClick={reloadApp}>Reload</button>
-         <br />
-         <button className="" onClick={closeApp}>Exit</button>
+         <div className="grid grid-col-1 gap-1">
+            <Button type={"warning"} text={"Reload"} onClick={reloadApp} disabled={false} />
+            <Button type={"danger"} text={"Exit"} onClick={closeApp} disabled={false} />
+         </div>
       </>
    );
 }
