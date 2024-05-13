@@ -20,7 +20,7 @@
       "shell": {
         "all": false,
         "open": false,
-        "execute": false,
+        "execute": true,
         "sidecar": false
       },
       "process": {
