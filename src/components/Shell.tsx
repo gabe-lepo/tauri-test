@@ -20,12 +20,14 @@ export default function Shell() {
    return (
       <>
          <CardTitle title="Shell" subtitle="Interact with system shell" />
-         <Button 
-            type={"success"}
-            text={"Run Command"}
-            onClick={runCommand}
-            disabled={false}
-         />
+         <div className="grid grid-cols-1">
+            <Button 
+               type={"success"}
+               text={"Run Command"}
+               onClick={runCommand}
+               disabled={false}
+            />
+         </div>
       </>
    );
 };
