@@ -21,7 +21,12 @@
         "all": false,
         "open": false,
         "execute": true,
-        "sidecar": false
+        "sidecar": false,
+        "scope": [{
+          "name": "pwd",
+          "cmd": "pwd",
+          "args": false
+      }]
       },
       "process": {
         "all": false,
