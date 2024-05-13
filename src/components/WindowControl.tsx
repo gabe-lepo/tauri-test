@@ -88,52 +88,26 @@ export default function WindowControl() {
 
    return(
       <>
-         <CardTitle title="Window" subtitle={"Info & Controls"} />
-         <div className="table w-full">
-            <div className="table-header-group">
-               <div className="table-row">
-                  <div className="table-cell">Property</div>
-                  <div className="table-cell">Data</div>
-               </div>
-            </div>
-            <div className="table-row-group">
-               <div className="table-row">
-                  <div className="table-cell">Width</div>
-                  <div className="table-cell">{windowWidth}</div>
-               </div>
-               <div className="table-row">
-                  <div className="table-cell">Height</div>
-                  <div className="table-cell">{windowHeight}</div>
-               </div>
-            </div>
-            <div className="table-row-group">
-               <div className="table-row">
-                  <div className="table-cell">
-                     <Button
-                        type={"warning"}
-                        text={"Center"}
-                        onClick={centerWindow}
-                        disabled={isLoading}
-                     />
-                  </div>
-                  <div className="table-cell">
-                     <Button
-                        type={"warning"}
-                        text={isMax ? "Unmax" : "Max"}
-                        onClick={toggleMaximize}
-                        disabled={isLoading}
-                     />
-                  </div>
-                  <div className="table-cell">
-                     <Button
-                        type={"warning"}
-                        text={"Minimize"}
-                        onClick={minimizeWindow}
-                        disabled={isLoading}
-                     />
-                  </div>
-               </div>
-            </div>
+         <CardTitle title="Window Controls" subtitle={windowWidth.toString() + " x " + windowHeight.toString()} />
+         <div className="grid grid-cols-3 gap-2">
+            <Button
+               type={"success"}
+               text={"Center"}
+               onClick={centerWindow}
+               disabled={isLoading}
+            />
+            <Button
+               type={"success"}
+               text={isMax ? "Unmaximize" : "Maximize"}
+               onClick={toggleMaximize}
+               disabled={isLoading}
+            />
+            <Button
+               type={"success"}
+               text={"Minimize"}
+               onClick={minimizeWindow}
+               disabled={isLoading}
+            />
          </div>
       </>
    );
