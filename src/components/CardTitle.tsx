@@ -7,7 +7,7 @@ interface Props {
 
 export default function CardTitle({ title, subtitle }: Props) {
    return (
-      <div className="text-center antialiased border border-dashed">
+      <div className="text-center antialiased bg-neutral-300 mb-1">
          <h1 className={
             "text-4xl" +
             " font-medium"
@@ -20,6 +20,7 @@ export default function CardTitle({ title, subtitle }: Props) {
          }>
             {subtitle}
          </h2>
+         
       </div>
    );
 };

@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {},
     container: {center: true,},
-    borderWidth: {DEFAULT: '1px',},
-    borderColor: {DEFAULT: 'black',},
+    // borderWidth: {DEFAULT: '1px',},
+    // borderColor: {DEFAULT: 'black',},
   },
   plugins: [],
 }
