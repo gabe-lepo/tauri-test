@@ -9,7 +9,6 @@ import EndpointAccess from "../components/EndpointAccess";
 import CardTitle from "../components/CardTitle";
 import WindowControl from "../components/WindowControl";
 import Clipboard from "../components/Clipboard";
-import Shell from "../components/Shell";
 
 function Home() {
    return(
@@ -25,7 +24,6 @@ function Home() {
             <ComponentCard component={<WifiList />} />
             <ComponentCard component={<EndpointAccess />} />
             <ComponentCard component={<Clipboard />} />
-            <ComponentCard component={<Shell />} />
          </div>
       </div>
    );

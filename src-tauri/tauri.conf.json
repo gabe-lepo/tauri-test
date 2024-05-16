@@ -20,13 +20,8 @@
       "shell": {
         "all": false,
         "open": false,
-        "execute": true,
-        "sidecar": false,
-        "scope": [{
-          "name": "pwd",
-          "cmd": "pwd",
-          "args": false
-      }]
+        "execute": false,
+        "sidecar": false
       },
       "process": {
         "all": false,
